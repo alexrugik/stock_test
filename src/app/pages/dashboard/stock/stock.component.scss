@@ -1,0 +1,28 @@
+.info-wrapper {
+  display: flex;
+  justify-content: space-between;
+  border: 1px dotted cornflowerblue;
+  margin: 10px;
+  .info, .chart {
+    width: 160px;
+    height: 150px;
+    padding: 10px;
+    flex: 1;
+    .name {
+      color: dodgerblue;
+    }
+    .symbol {
+      color: lightblue;
+    }
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    div {
+      flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      height: 25px;
+    }
+  }
+}

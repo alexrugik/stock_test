@@ -1,0 +1,24 @@
+<app-loader [showLoader]="loading"></app-loader>
+<div class="info-wrapper" *ngIf="!loading">
+    <div class="info">
+        <div class="name"
+             [title]="stockConfig.name">
+            {{ stockConfig.name }}
+        </div>
+        <div class="symbol"
+             [title]="stockConfig.symbol">
+            {{ stockConfig.symbol }}
+        </div>
+        <div class="currentValue"
+             [title]="stockConfig.currentValue">
+            {{ stockConfig.currentValue }}
+        </div>
+        <div class="trends"
+             [title]="stockConfig.trends">
+            {{ stockConfig.trends }}
+        </div>
+    </div>
+    <div class="chart">
+        <app-stock-chart [chartData]="stockConfig.history"></app-stock-chart>
+    </div>
+</div>

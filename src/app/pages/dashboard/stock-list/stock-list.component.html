@@ -1,0 +1,5 @@
+<div class="stock-list-wrapper">
+    <app-stock *ngFor="let stockConfig of stockListConfig; trackBy: trackByFn"
+               [stockConfig]="stockConfig">
+    </app-stock>
+</div>
